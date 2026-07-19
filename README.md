@@ -96,9 +96,6 @@ Ensure Python 3 is installed on your local environment.
 To fetch live news items, analyze their content, and refresh the database cache:
 
 ```bash
-# Navigate to the project root directory
-cd C:\Users\kadam\.gemini\antigravity\scratch\tech-news-analytics
-
 # Execute the python ETL script
 python news_pipeline.py
 ```
