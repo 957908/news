@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexTech News Analytics - BI Sentiment Dashboard</title>
+  <meta name="description" content="A professional-grade Business Intelligence dashboard analyzing real-time tech news sentiment, category trends, and topic frequencies. Built with vanilla JS, CSS, and Chart.js.">
+  
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+  <!-- Glowing background elements for premium feel -->
+  <div class="glow-bg-primary"></div>
+  <div class="glow-bg-secondary"></div>
+
+  <div class="dashboard-wrapper">
+    <!-- Header -->
+    <header class="main-header" role="banner">
+      <div class="header-left">
+        <div class="logo-area">
+          <i class="fa-solid fa-chart-line-up logo-icon"></i>
+          <h1>ApexTech <span class="gradient-text">News Analytics</span></h1>
+        </div>
+        <p class="subtitle">Real-Time Data Pipeline & Sentiment Intelligence Dashboard</p>
+      </div>
+      
+      <div class="header-right">
+        <div class="pipeline-status-badge">
+          <span class="status-dot pulse"></span>
+          <span class="status-label">Pipeline Active</span>
+        </div>
+        <button id="run-pipeline-btn" class="btn btn-primary" title="Trigger ingestion scripts and reload data">
+          <i class="fa-solid fa-rotate"></i> Sync Data
+        </button>
+      </div>
+    </header>
+
+    <!-- KPI Metric Summary Row -->
+    <section class="kpi-grid" aria-label="Key Performance Indicators">
+      <!-- KPI 1 -->
+      <div class="kpi-card glass" id="kpi-total-articles">
+        <div class="kpi-content">
+          <span class="kpi-title">Total Processed</span>
+          <span class="kpi-value" id="val-total-articles">0</span>
+          <span class="kpi-trend trend-up"><i class="fa-solid fa-arrow-trend-up"></i> Live Feed</span>
+        </div>
+        <div class="kpi-icon-wrapper color-cyan">
+          <i class="fa-solid fa-database"></i>
+        </div>
+      </div>
+      
+      <!-- KPI 2 -->
+      <div class="kpi-card glass" id="kpi-avg-sentiment">
+        <div class="kpi-content">
+          <span class="kpi-title">Avg Sentiment Index</span>
+          <span class="kpi-value" id="val-avg-sentiment">0.00</span>
+          <span class="kpi-trend" id="val-avg-sentiment-label">Neutral</span>
+        </div>
+        <div class="kpi-icon-wrapper color-green" id="avg-sentiment-icon-box">
+          <i class="fa-solid fa-face-smile"></i>
+        </div>
+      </div>
+
+      <!-- KPI 3 -->
+      <div class="kpi-card glass" id="kpi-top-topic">
+        <div class="kpi-content">
+          <span class="kpi-title">Dominant Tech Stack</span>
+          <span class="kpi-value" id="val-top-topic">N/A</span>
+          <span class="kpi-trend trend-neutral" id="val-top-topic-count">0 Mentions</span>
+        </div>
+        <div class="kpi-icon-wrapper color-orange">
+          <i class="fa-solid fa-fire"></i>
+        </div>
+      </div>
+
+      <!-- KPI 4 -->
+      <div class="kpi-card glass" id="kpi-critical-alerts">
+        <div class="kpi-content">
+          <span class="kpi-title">Threat Alerts</span>
+          <span class="kpi-value" id="val-critical-alerts">0</span>
+          <span class="kpi-trend trend-down" id="val-critical-alerts-desc">Highly Negative News</span>
+        </div>
+        <div class="kpi-icon-wrapper color-red" id="critical-alerts-icon-box">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Chart Analytics Grid -->
+    <section class="analytics-grid" aria-label="Charts and Analytics">
+      <!-- Sentiment Distribution -->
+      <div class="chart-card glass">
+        <div class="chart-header">
+          <h3>Sentiment Breakdown</h3>
+          <p class="chart-subtitle">Proportion of Positive, Neutral, & Negative coverage</p>
+        </div>
+        <div class="chart-container">
+          <canvas id="sentimentDoughnutChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Tech Mentions Trend -->
+      <div class="chart-card glass">
+        <div class="chart-header">
+          <h3>Technology Stack Volatility</h3>
+          <p class="chart-subtitle">Topic volume comparison across current database</p>
+        </div>
+        <div class="chart-container">
+          <canvas id="techVolumeBarChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Data Explorer -->
+    <main class="explorer-grid">
+      <!-- Sidebar Filters -->
+      <aside class="filter-sidebar glass" aria-label="Filters">
+        <h2 class="sidebar-title">Data Discovery Filters</h2>
+        
+        <!-- Search bar -->
+        <div class="filter-group">
+          <label for="search-input" class="filter-label">Search Articles</label>
+          <div class="search-input-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="search-input" placeholder="Search keywords..." aria-label="Search tech news">
+          </div>
+        </div>
+
+        <!-- Tech Category Tags -->
+        <div class="filter-group">
+          <span class="filter-label">Filter by Technology</span>
+          <div id="tech-filters-container" class="tag-selector-grid">
+            <button class="tag-btn active" data-tag="All">All Topics</button>
+            <button class="tag-btn" data-tag="AI/ML">AI / ML</button>
+            <button class="tag-btn" data-tag="Python">Python</button>
+            <button class="tag-btn" data-tag="Web Dev">Web Dev</button>
+            <button class="tag-btn" data-tag="Cloud">Cloud</button>
+            <button class="tag-btn" data-tag="Big Data">Big Data</button>
+            <button class="tag-btn" data-tag="Database">Database</button>
+            <button class="tag-btn" data-tag="Security">Security</button>
+          </div>
+        </div>
+
+        <!-- Sentiment Filter Selection -->
+        <div class="filter-group">
+          <span class="filter-label">Sentiment Sentiment</span>
+          <div class="sentiment-selector">
+            <button class="sentiment-btn active" data-sentiment="All">All</button>
+            <button class="sentiment-btn" data-sentiment="Positive" title="Positive Articles"><i class="fa-solid fa-circle-check"></i> Positive</button>
+            <button class="sentiment-btn" data-sentiment="Neutral" title="Neutral Articles"><i class="fa-solid fa-circle-minus"></i> Neutral</button>
+            <button class="sentiment-btn" data-sentiment="Negative" title="Negative Articles"><i class="fa-solid fa-circle-xmark"></i> Negative</button>
+          </div>
+        </div>
+
+        <!-- Source Filter Selection -->
+        <div class="filter-group">
+          <span class="filter-label">Feed Sources</span>
+          <div class="source-checkbox-group">
+            <label class="checkbox-container">
+              <input type="checkbox" id="source-hn-check" checked data-source="HackerNews">
+              <span class="checkbox-checkmark"></span>
+              Hacker News Feed
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" id="source-sd-check" checked data-source="Slashdot">
+              <span class="checkbox-checkmark"></span>
+              Slashdot Feed
+            </label>
+          </div>
+        </div>
+
+        <!-- Career Relevance Alert -->
+        <div class="career-promo-card">
+          <div class="promo-header">
+            <i class="fa-solid fa-user-tie"></i>
+            <h4>Portfolio Insight</h4>
+          </div>
+          <p>
+            This BI Platform highlights your capabilities in <strong>Python ETL Ingestion</strong>, rule-based <strong>Natural Language Processing (NLP)</strong>, and constructing interactive <strong>Business Intelligence Dashboards</strong>.
+          </p>
+        </div>
+      </aside>
+
+      <!-- Main News Feed -->
+      <section class="news-feed-area" aria-label="Technology News Feed">
+        <div class="feed-header-controls">
+          <h2 class="feed-title">Ingested Articles Feed (<span id="articles-count">0</span>)</h2>
+          <div class="sort-wrapper">
+            <label for="sort-select" class="sr-only">Sort by</label>
+            <select id="sort-select" aria-label="Sort articles by">
+              <option value="newest">Newest First</option>
+              <option value="oldest">Oldest First</option>
+              <option value="sentiment-desc">Highest Sentiment</option>
+              <option value="sentiment-asc">Lowest Sentiment</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Feed List -->
+        <div id="news-feed-list" class="news-feed-list">
+          <!-- Dynamically populated card structure -->
+        </div>
+
+        <!-- No Results state -->
+        <div id="no-results-card" class="no-results glass hide">
+          <i class="fa-solid fa-folder-open no-results-icon"></i>
+          <h4>No Articles Found</h4>
+          <p>Try resetting the search keyword or adjusting your filters.</p>
+          <button id="reset-filters-btn" class="btn btn-secondary">Reset Filters</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="dashboard-footer" role="contentinfo">
+      <p>&copy; 2026 Tech News Sentiment Dashboard. Built as a Senior Portfolio Project.</p>
+      <div class="footer-links">
+        <a href="news_pipeline.py" target="_blank" class="footer-link-item"><i class="fa-brands fa-python"></i> Python Code</a>
+        <a href="data.json" target="_blank" class="footer-link-item"><i class="fa-solid fa-code"></i> Raw JSON Database</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>

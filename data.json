@@ -1,0 +1,551 @@
+[
+  {
+    "title": "Python 3.12 Released with Faster Execution and Improved Error Messages",
+    "link": "https://python.org",
+    "description": "The latest release of Python brings significant speedups, sub-interpreters, and more descriptive tracebacks for debugging complex systems.",
+    "timestamp": "2026-07-19T09:40:00Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.65,
+    "sentiment_label": "Positive",
+    "tags": [
+      "Python",
+      "Big Data"
+    ]
+  },
+  {
+    "title": "NVIDIA Unveils New Superchip Specifically Optimized for LLM Training",
+    "link": "https://nvidia.com",
+    "description": "Nvidia announced its next-generation architecture, promising a 4x reduction in training times for massive language models like GPT-5 class systems.",
+    "timestamp": "2026-07-19T08:15:00Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.5,
+    "sentiment_label": "Positive",
+    "tags": [
+      "AI/ML",
+      "Cloud"
+    ]
+  },
+  {
+    "title": "Critical RCE Vulnerability Found in Popular Open-Source Library",
+    "link": "https://slashdot.org",
+    "description": "Security researchers warning of a critical remote code execution vulnerability that affects thousands of enterprise applications running in the cloud.",
+    "timestamp": "2026-07-19T07:22:00Z",
+    "source": "Slashdot",
+    "sentiment_score": -0.85,
+    "sentiment_label": "Negative",
+    "tags": [
+      "Security",
+      "Cloud"
+    ]
+  },
+  {
+    "title": "Databricks Open-Sources New Unity Catalog for Unified Data Governance",
+    "link": "https://databricks.com",
+    "description": "In a major move to expand open-source lakehouse architectures, Databricks has fully open-sourced its catalog tool for metadata management.",
+    "timestamp": "2026-07-19T05:10:00Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.45,
+    "sentiment_label": "Positive",
+    "tags": [
+      "Big Data",
+      "Database"
+    ]
+  },
+  {
+    "title": "LLM-Integrated Multivariable Calculus Course",
+    "link": "https://calculus.academa.ai/",
+    "description": "Comments",
+    "timestamp": "2026-07-19T02:55:43Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "AI/ML"
+    ]
+  },
+  {
+    "title": "FDA approves new kind of cholesterol pill",
+    "link": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+    "description": "Comments",
+    "timestamp": "2026-07-19T02:40:22Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "I built a browser-based P2P file transfer tool using WebRTC",
+    "link": "https://airdows.com/",
+    "description": "Comments",
+    "timestamp": "2026-07-19T02:17:03Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Deepsec",
+    "link": "https://github.com/vercel-labs/deepsec",
+    "description": "Comments",
+    "timestamp": "2026-07-19T01:33:32Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "AI Mania Is Eviscerating Global Decision-Making",
+    "link": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/#fnref:3",
+    "description": "Comments",
+    "timestamp": "2026-07-19T01:29:19Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "AI/ML"
+    ]
+  },
+  {
+    "title": "Better and Cheaper Than IPTV",
+    "link": "https://github.com/stupside/castor",
+    "description": "Comments",
+    "timestamp": "2026-07-19T00:59:55Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Transcribe.cpp",
+    "link": "https://workshop.cjpais.com/projects/transcribe-cpp",
+    "description": "Comments",
+    "timestamp": "2026-07-19T00:38:26Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Codex Resets",
+    "link": "https://codex-resets.com/",
+    "description": "Comments",
+    "timestamp": "2026-07-18T23:24:26Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Major Cloud Outage Disrupts Services Across North America",
+    "link": "https://slashdot.org",
+    "description": "A routine configuration update triggered a cascade of errors in a prominent cloud provider's DNS system, causing widespread downtime.",
+    "timestamp": "2026-07-18T22:30:00Z",
+    "source": "Slashdot",
+    "sentiment_score": -0.6,
+    "sentiment_label": "Negative",
+    "tags": [
+      "Cloud",
+      "Security"
+    ]
+  },
+  {
+    "title": "Mayor Mamdani Says Landlords Can't Use AI Images to Advertise",
+    "link": "https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/",
+    "description": "Comments",
+    "timestamp": "2026-07-18T22:13:39Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "AI/ML"
+    ]
+  },
+  {
+    "title": "Real-Time LuaTeX: Recompiling Large Documents in 1ms [pdf]",
+    "link": "https://www.tug.org/tug2026/preprints/lode-realtime.pdf",
+    "description": "Comments",
+    "timestamp": "2026-07-18T22:09:07Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Classic Amiga titles, free to download",
+    "link": "https://amigafreeware.downer.tech/",
+    "description": "Comments",
+    "timestamp": "2026-07-18T21:55:27Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Hardcore IndieWeb: Run your own website 100% independently for only $0.01/day",
+    "link": "https://www.neatnik.net/hardcore-indieweb",
+    "description": "Comments",
+    "timestamp": "2026-07-18T21:45:12Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Co-evolution of self-replication and function in a digital primordial soup",
+    "link": "https://arxiv.org/abs/2607.09211",
+    "description": "Comments",
+    "timestamp": "2026-07-18T21:09:01Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "React 19 Enters Release Candidate with React Server Components as Standard",
+    "link": "https://react.dev",
+    "description": "The React team outlines the final feature set for React 19, focusing heavily on document metadata support and actions for form handling.",
+    "timestamp": "2026-07-18T18:45:00Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.25,
+    "sentiment_label": "Positive",
+    "tags": [
+      "Web Dev"
+    ]
+  },
+  {
+    "title": "Setting up your spare Mac for Claude Code to control, a step-by-step guide",
+    "link": "https://ykdojo.github.io/claude-controls-mac/",
+    "description": "Comments",
+    "timestamp": "2026-07-18T16:12:08Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "AI/ML"
+    ]
+  },
+  {
+    "title": "Our Approach to Bioresilience: Isomorphic Labs and Google DeepMind",
+    "link": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+    "description": "Comments",
+    "timestamp": "2026-07-18T16:02:45Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "AI/ML"
+    ]
+  },
+  {
+    "title": "Gleam Is Now on Tangled",
+    "link": "https://tangled.org/gleam.run/gleam",
+    "description": "Comments",
+    "timestamp": "2026-07-18T15:44:04Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "If You Build It, They Will Come",
+    "link": "https://www.benlandautaylor.com/p/if-you-build-it-they-will-come",
+    "description": "Comments",
+    "timestamp": "2026-07-18T15:37:01Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Elixir-lang.org has a new design",
+    "link": "https://elixir-lang.org/",
+    "description": "Comments",
+    "timestamp": "2026-07-18T15:32:04Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Show HN: Q3Edit – Edit and play Quake 3 maps in the browser",
+    "link": "https://q3edit.com",
+    "description": "Comments",
+    "timestamp": "2026-07-18T15:12:40Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "PostgreSQL 16 Enhances Query Parallelism and Logical Replication",
+    "link": "https://postgresql.org",
+    "description": "The new version of Postgres brings improved logical replication performance and optimized execution plans for analytical queries.",
+    "timestamp": "2026-07-18T14:12:00Z",
+    "source": "Slashdot",
+    "sentiment_score": 0.55,
+    "sentiment_label": "Positive",
+    "tags": [
+      "Database",
+      "Big Data"
+    ]
+  },
+  {
+    "title": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+    "link": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+    "description": "Comments",
+    "timestamp": "2026-07-18T13:00:52Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "AI/ML"
+    ]
+  },
+  {
+    "title": "Tech Industry Confronts Rising Cybersecurity Attacks Targeting Supply Chains",
+    "link": "https://slashdot.org",
+    "description": "A new industry report details a 300% spike in attacks targeting upstream developer dependencies, calling for stricter package verification.",
+    "timestamp": "2026-07-18T11:05:00Z",
+    "source": "Slashdot",
+    "sentiment_score": -0.4,
+    "sentiment_label": "Negative",
+    "tags": [
+      "Security"
+    ]
+  },
+  {
+    "title": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+    "link": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/",
+    "description": "Comments",
+    "timestamp": "2026-07-18T11:00:29Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "AI/ML"
+    ]
+  },
+  {
+    "title": "LG monitors silently install software through Windows Update without consent",
+    "link": "https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent",
+    "description": "Comments",
+    "timestamp": "2026-07-18T10:21:19Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Is Python Still the King of Data Science in the Era of Mojo and Julia?",
+    "link": "https://hackernews.com",
+    "description": "An in-depth analysis of community metrics, package downloads, and job postings shows Python keeping a massive lead in AI and machine learning fields.",
+    "timestamp": "2026-07-18T09:00:00Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.2,
+    "sentiment_label": "Positive",
+    "tags": [
+      "Python",
+      "AI/ML"
+    ]
+  },
+  {
+    "title": "Google DeepMind Announces AlphaFold 3 with Biomolecular Interaction Modeling",
+    "link": "https://deepmind.google",
+    "description": "AlphaFold 3 extends predictions beyond protein structures to include chemical compounds, DNA, and RNA, opening new avenues for drug design.",
+    "timestamp": "2026-07-17T16:40:00Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.8,
+    "sentiment_label": "Positive",
+    "tags": [
+      "AI/ML"
+    ]
+  },
+  {
+    "title": "AWS Launches New MemoryDB for Redis with Multi-Region Clustering",
+    "link": "https://aws.amazon.com",
+    "description": "The new cloud service offers sub-millisecond latency combined with robust cross-region replication for high-availability database applications.",
+    "timestamp": "2026-07-17T13:20:00Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.35,
+    "sentiment_label": "Positive",
+    "tags": [
+      "Cloud",
+      "Database"
+    ]
+  },
+  {
+    "title": "State-Sponsored Hacker Group Exploits Zero-Day in VPN Software",
+    "link": "https://slashdot.org",
+    "description": "National security agencies issue alerts warning enterprise networks to patch their VPN gateways immediately due to an active exploit campaign.",
+    "timestamp": "2026-07-17T08:50:00Z",
+    "source": "Slashdot",
+    "sentiment_score": -0.7,
+    "sentiment_label": "Negative",
+    "tags": [
+      "Security"
+    ]
+  },
+  {
+    "title": "Apache Kafka 3.7 Simplifies Metadata Management and Storage Scaling",
+    "link": "https://kafka.apache.org",
+    "description": "The Kafka community introduces new KRaft improvements, preparing for the complete deprecation of ZooKeeper dependency in production setups.",
+    "timestamp": "2026-07-16T15:30:00Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.3,
+    "sentiment_label": "Positive",
+    "tags": [
+      "Big Data"
+    ]
+  },
+  {
+    "title": "The Rise of Next.js and the Convergence of Frontend and Server-Side Code",
+    "link": "https://nextjs.org",
+    "description": "An architectural review of how modern React frameworks are transforming development workflows by blending client components and server code.",
+    "timestamp": "2026-07-16T11:15:00Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.15,
+    "sentiment_label": "Positive",
+    "tags": [
+      "Web Dev"
+    ]
+  },
+  {
+    "title": "Decentralized Database Architectures See Surging Adoption in 2026",
+    "link": "https://slashdot.org",
+    "description": "DevOps surveys reveal that multi-master, edge-replicated databases are rapidly replacing traditional single-instance databases for globally distributed apps.",
+    "timestamp": "2026-07-16T09:45:00Z",
+    "source": "Slashdot",
+    "sentiment_score": 0.4,
+    "sentiment_label": "Positive",
+    "tags": [
+      "Database",
+      "Cloud"
+    ]
+  },
+  {
+    "title": "Developing an Intuitive Sense of Scale",
+    "link": "https://magworld.pw",
+    "description": "Comments",
+    "timestamp": "2026-07-15T05:13:55Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Is this the end of the once-mighty GoPro?",
+    "link": "https://amateurphotographer.com/latest/photo-news/going-going-gone-is-this-the-end-of-the-once-mighty-gopro/",
+    "description": "Comments",
+    "timestamp": "2026-07-15T03:46:35Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Speech Recognition and TTS in less than 500kb",
+    "link": "https://github.com/moonshine-ai/moonshine/tree/main/micro",
+    "description": "Comments",
+    "timestamp": "2026-07-14T19:25:10Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Mathematicians still don't know the fastest way to multiply numbers",
+    "link": "https://www.scientificamerican.com/article/mathematicians-still-dont-know-the-fastest-way-to-multiply-numbers/",
+    "description": "Comments",
+    "timestamp": "2026-07-13T17:21:10Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "A Second-Grade Teacher Revived a Beloved Video Game",
+    "link": "https://www.nytimes.com/2026/07/13/style/backyard-baseball-video-game-teacher.html",
+    "description": "Comments",
+    "timestamp": "2026-07-13T17:13:22Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "I'm Making Strandfall, a Solarpunk Orienteering Larp",
+    "link": "https://mssv.net/2026/04/29/im-making-strandfall-a-solarpunk-orienteering-larp/",
+    "description": "Comments",
+    "timestamp": "2026-07-13T13:00:35Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "A Visual Catalog of Retro Macintosh Software",
+    "link": "https://www.marciot.com/mac68k-visual-catalog/",
+    "description": "Comments",
+    "timestamp": "2026-07-12T00:22:14Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  },
+  {
+    "title": "Parsoid",
+    "link": "https://www.mediawiki.org/wiki/Parsoid",
+    "description": "Comments",
+    "timestamp": "2026-07-11T01:41:55Z",
+    "source": "HackerNews",
+    "sentiment_score": 0.0,
+    "sentiment_label": "Neutral",
+    "tags": [
+      "General"
+    ]
+  }
+]
