@@ -55,11 +55,11 @@ graph TD
 
 ## 📂 Codebase Reference
 
-*   [news_pipeline.py](file:///C:/Users/kadam/.gemini/antigravity/scratch/tech-news-analytics/news_pipeline.py): Orchestrates RSS feed fetching, data scrubbing, tag mapping, sentiment calculations, and storage updates.
-*   [data.json](file:///C:/Users/kadam/.gemini/antigravity/scratch/tech-news-analytics/data.json): Cache containing all parsed articles and analytical labels.
-*   [index.html](file:///C:/Users/kadam/.gemini/antigravity/scratch/tech-news-analytics/index.html): Layout structure for the visual BI Dashboard.
-*   [styles.css](file:///C:/Users/kadam/.gemini/antigravity/scratch/tech-news-analytics/styles.css): Complete styling sheets defining CSS variables, grids, and transitions.
-*   [app.js](file:///C:/Users/kadam/.gemini/antigravity/scratch/tech-news-analytics/app.js): Controller logic managing state filters, metrics compilation, and dynamic plot rendering.
+*   [news_pipeline.py]: Orchestrates RSS feed fetching, data scrubbing, tag mapping, sentiment calculations, and storage updates.
+*   [data.json]: Cache containing all parsed articles and analytical labels.
+*   [index.html]: Layout structure for the visual BI Dashboard.
+*   [styles.css]: Complete styling sheets defining CSS variables, grids, and transitions.
+*   [app.js]: Controller logic managing state filters, metrics compilation, and dynamic plot rendering.
 
 ---
 
